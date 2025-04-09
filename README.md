@@ -43,6 +43,75 @@ Contributions, suggestions, and improvements are very welcome! To contribute:
   <img src="/.github/2.jpg" alt="Axon CAD Design" width="400"/>
 </div>
 
+## Parts List
+3D Printer:
+Neptune 4 Max
+
+Stepper Motor & Drivers:
+Stepper Motor (2 unit)
+Stepper Motor Drivers (2 units)
+
+Microcontrollers & Boards:
+ESP32 Development Boards (4 units)
+RPI4 (1 unit)
+
+Power & Battery Management:
+Battery Management System (BMS)/Balancer (1 unit)
+Charge Indicator (1 unit, sourced from Aliexpress)
+Cytron Motor Drivers (2 units)
+Power Converters (2 units, from Aliexpress)
+
+Filament & 3D Printing Materials:
+Esun PLA+ Filament, White (+-7 kg)
+Esun PLA+ Filament, Additional (2 kg, grey)
+TPU Filament (250 g)
+
+
+Structural & Mechanical Components:
+Rotary Wheel (75 mm diameter)
+Aluminum Profiles 20x20 with Screws (for frame assembly)
+Deburring Tool
+
+Sensors & Accessories:
+Touch Sensor Module(s)
+Ultrasonic Sensor
+Level Shifters (4 units)
+Breadboards and Connecting Cables (various lengths for ESP32 accessories)
+
+Connectors & Cables:
+XT60 Connector Pairs (5 pairs)
+AWG12 Cable – Black (2 meters)
+AWG12 Cable – Red (2 meters)
+
+Servo Motors:
+Servo Motor, 13 kg torque (full metal gear)
+Servo Motor, 35 kg torque (8 units DS3235 variant)
+Servo Connectors and Crimping Tool
+
+Additional Motors & Converters:
+B-Smart Motors (4 units 60 kg torque, form aliexpress) we recommend pay little bit more and redesing it for 60-70kg servos
+
+Miscellaneous Hardware:
+Magnetic Inserts and Small Fasteners (M series inserts)
+Small Bearings or 4 mm Balls (for mechanical assemblies; quantity as needed)
+Elastic Paracord
+Magnets (approximately 70 units; specifications as needed)
+LG MJ1 Components (15 units; 3s5p)
+
+Audio & Visual Components:
+Wireless Microphone – Hollyland Lark M1 Solo
+Touchscreen LCD – 10.1″ IPS, 1024×600 resolution
+Camera Module – Raspberry Camera v3
+HDMI Adapter and Connector
+
+Adhesives & Fastening Tools:
+Heat-Shrink Tape and Adhesive
+Soldering/Crimping Tools (for connectors)
+
+Other Consumables:
+Bungee Cord (5 m) to make working fingers
+
+
 ---
 
 For more details, updates, or to get involved, check out our GitHub repository. Let’s build the future of open-source humanoid AI robotics together!
