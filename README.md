@@ -3,7 +3,7 @@
   <img src="/.github/1.jpg" alt="Axon Robot" width="500"/>
 </div>
 
-First of all, we want to say that the whole project is kinda junk and messy – it’s still a prototype, and we were learning as we went along. For example, the CAD design is, in our opinion, terrible to manage from the inside even if it looks cool on the outside. So, if you decide to work on this project, you might be able to speed things up by using what we've already done, but trust us – it’s not a simple job. We’re open-sourcing this because some Redditors told us to do it. Just keep in mind that when we started this project, we were 16 and 17 years old.
+First of all, we want to say that the whole project is kinda junk and messy – it’s still a prototype, and we were learning as we went along. For example, the CAD design is, in our opinion, terrible to manage from the inside even if it looks cool on the outside. So, if you decide to work on this project, you might be able to speed things up by using what we've already done, but trust us – it’s not a simple job. We’re open-sourcing this because some Redditors told us to do it. Just keep in mind that when we started this project, we were 16 and 17 years old (2024 May).
 
 Axon is an open-source AI robot platform designed to interact with its environment through dynamic arm and head movements, plus voice control with speech recognition. It’s a "modular" system that encourages experimentation and customization in both hardware and software.
 
