@@ -1,8 +1,8 @@
 <div align="center">
   <h1>Axon Humanoid AI Robot</h1>
   <img src="/.github/1.jpg" alt="Axon Robot" width="500"/>
-  <img src="/.github/axongif1.gif" alt="Axon Robot" width="500"/>
 </div>
+<img src="/.github/axongif1.gif" alt="Axon Robot" width="500"/>
 
 First of all, we want to say that the whole project is kinda junk and messy—it’s still a prototype and we were learning as we went along. For example, the CAD design is, in our opinion, terrible to manage from the inside even if it looks cool on the outside. So, if you decide to work on this project, you might be able to speed things up by using what we've already done, but trust us—it’s not a simple job.
 
