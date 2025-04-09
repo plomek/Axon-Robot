@@ -1,7 +1,6 @@
 <div align="center">
   <h1>Axon Humanoid AI Robot</h1>
   <img src="/.github/1.jpg" alt="Axon Robot" width="500"/>
-  <img src="/.github/axongif1.gif" alt="Axon Robot in action" width="500"/>
 </div>
 <div align="center">
   <img src="/.github/axongif1.gif" alt="Axon Robot in action" width="500"/>
