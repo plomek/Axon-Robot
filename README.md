@@ -2,9 +2,6 @@
   <h1>Axon Humanoid AI Robot</h1>
   <img src="/.github/1.jpg" alt="Axon Robot" width="500"/>
 </div>
-<div align="center">
-  <img src="/.github/axongif1.gif" alt="Axon Robot in action" width="500"/>
-</div>
 
 First of all, we want to say that the whole project is kinda junk and messy – it’s still a prototype, and we were learning as we went along. For example, the CAD design is, in our opinion, terrible to manage from the inside even if it looks cool on the outside. So, if you decide to work on this project, you might be able to speed things up by using what we've already done, but trust us – it’s not a simple job. We’re open-sourcing this because some Redditors told us to do it. Just keep in mind that when we started this project, we were 16 and 17 years old.
 
@@ -38,9 +35,9 @@ Contributions, suggestions, and improvements are very welcome! To contribute:
 - Create a new branch for your changes.
 - Submit a pull request and describe your modifications in detail.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
+<div align="center">
+  <img src="/.github/axongif1.gif" alt="Axon Robot in action" width="500"/>
+</div>
 
 <div align="center">
   <img src="/.github/2.jpg" alt="Axon CAD Design" width="400"/>
