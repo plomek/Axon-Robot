@@ -3,9 +3,9 @@
   <img src="/.github/1.jpg" alt="Axon Robot" width="500"/>
 </div>
 
-First of all, we want to say that the whole project is kinda junk and messy – it’s still a prototype, and we were learning as we went along. For example, the CAD design is, in our opinion, terrible to manage from the inside even if it looks cool on the outside. So, if you decide to work on this project, you might be able to speed things up by using what we've already done, but trust us – it’s not a simple job. We’re open-sourcing this because some Redditors told us to do it. Just keep in mind that when we started this project, we were 16 and 17 years old (2024 May).
+<b>Axon is currently a working prototype. While it’s fully functional, it's not yet fully polished and still needs some improvements and refinements to make it easier to assemble, more reliable, and more user-friendly. Just keep in mind that when we started this project, we had no cad experience and were 16 and 17 years old we are working on it sice May 2024.</b>
 
-Axon is an open-source AI robot platform designed to interact with its environment through dynamic arm and head movements, plus voice control with speech recognition. It’s a "modular" system that encourages experimentation and customization in both hardware and software.
+Axon is an open-source robot that uses AI. It can move its arms and head, and it can also drive around. It has AI-powered speech recognition, so you can control it with your voice. It uses a database of questions with actions, along with a large language model (LLM), to answer other questions. It also has a built-in screen, colorful LED eyes, and can be controlled through a website.
 
 ## Features
 
@@ -17,7 +17,11 @@ Axon is an open-source AI robot platform designed to interact with its environme
 
 ## CAD Models
 
-All of the CAD files are available on [Onshape](https://cad.onshape.com/documents/940cdfcdb0dfad6e1a4b6d02/w/9cf2ed19ea888e5cc5dfd799/e/9b8e8ab3c406b01155d91643) and Printables. It might be hard for you to print everything like we did because we specially bought a huge 3D printer — the Elegoo Neptune 4 Max.
+All of the CAD files are available on [Onshape](https://cad.onshape.com/documents/940cdfcdb0dfad6e1a4b6d02/w/9cf2ed19ea888e5cc5dfd799/e/9b8e8ab3c406b01155d91643) and stl files avillable on [Printables](https://www.printables.com/model/1260260-axon-open-source-humanoid-robot). This project is <b>not beginer friendly!</b> You should have some knowlage about 3D printing and CAD preferably onshape. Some parts will need to be split into smaller pieces unless you have a very large 3D printer. The robot was designed to be printed on a 420x420 mm build plate. It was printed it on the Neptune 4 Max, but it should be possible to print it on a smaller 3D printer with some adjustments. It might even be better to print the base in multiple parts to make it easier to open after assembly.
+
+As of now, some parts still need to be CNC-cut from metal, along with two metal sheets that need to be CNC'd and bent into shape. However, It should be redesiged to be 3D printable and possibly to use servos instead of unreliable geared motors with encoders whitch are hard to controll, making the robot easier to replicate.
+
+The robot is supported by a structural aluminum profile, 20x20 mm with a 6 mm slot, which needs to be connected to the center of the bottom drive—this can be done, for example, using a metal plate.
 
 ## Installation & Setup
 
@@ -25,7 +29,7 @@ Okay, so this is kinda hard because it's a prototype. You’ll need to install f
 
 ## Documentation
 
-Right now, we don't have any solid documentation. We’ve got some rough sketches that explain how it works. We might put together proper docs later, but honestly, you probably shouldn’t expect perfection from this moving trash can.
+Comming Soon™
 
 ## Contributing
 
@@ -43,75 +47,71 @@ Contributions, suggestions, and improvements are very welcome! To contribute:
   <img src="/.github/2.jpg" alt="Axon CAD Design" width="400"/>
 </div>
 
+Robot wiering:
+The robot is controlled by a Raspberry Pi through a web interface or voice commands. These commands are sent to four ESP32 modules. Each ESP32 receives its specific command and performs an action, such as changing the eye color. While it's possible to use 3 or even 2 ESP32 modules with the right code, we're using 4 because it was easier to split the code this way. Each ESP32 controls a different part of the robot:
+1.Head servo and LED
+2.Robot driving
+3.Arm servos
+4.Arm motors with limit switches. (experimental—right now, the encoders don't work well with all four motors at once, so it relies on timers and limit switches, which don't always work perfectly).
+
 ## Parts List
 3D Printer:
-Neptune 4 Max
+Recomended Neptune 4 Max preferably with a 0.8mm or 0.6mm nozzle for larger parts or any other 420mmx420mmx480mm or larger printer. You should be able to still print it on a smaller pritner by redesigning some parts or splitting prints in to multiple parts
 
 Stepper Motor & Drivers:
-Stepper Motor (2 unit)
-Stepper Motor Drivers (2 units)
+2x Nema 17 Stepper Motor for driving
+2x Stepper Motor Drivers eg. TMC2209 V1.3
 
 Microcontrollers & Boards:
 ESP32 Development Boards (4 units)
-RPI4 (1 unit)
-
-Power & Battery Management:
-Battery Management System (BMS)/Balancer (1 unit)
-Charge Indicator (1 unit, sourced from Aliexpress)
-Cytron Motor Drivers (2 units)
-Power Converters (2 units, from Aliexpress)
+RPI4 or newer
 
 Filament & 3D Printing Materials:
 Esun PLA+ Filament, White (+-7 kg)
 Esun PLA+ Filament, Additional (2 kg, grey)
-TPU Filament (250 g)
+optional TPU Filament for tires (250 g)
 
 
 Structural & Mechanical Components:
-Rotary Wheel (75 mm diameter)
-Aluminum Profiles 20x20 with Screws (for frame assembly)
-Deburring Tool
+Rotary Wheel (75 mm diameter) 53mm x 40mm mounting hole spacing
+Aluminum Profile 20mmx20mm lenght 1040mm and some way to mount it to the bottom like metal plate and corner brackets
 
 Sensors & Accessories:
-Touch Sensor Module(s)
+raspberry pi camera v3 wide
 Ultrasonic Sensor
-Level Shifters (4 units)
-Breadboards and Connecting Cables (various lengths for ESP32 accessories)
+Breadboards and cables various lengths (crimping your own longer cables eg.with 22awg wire and a cable crimper is recomended)
 
-Connectors & Cables:
-XT60 Connector Pairs (5 pairs)
+Power Components:
+XT60 Connectors for charging
 AWG12 Cable – Black (2 meters)
 AWG12 Cable – Red (2 meters)
+3s5p li-ion battery LG 18650 MJ1
+any 3s+ liion Battery charger - hota d6 pro
+Power distribiution board
+Led power switch
+li-ion battery indicator
+Multiple step up and step down converters:
+5V for raspberry pi and servos...
+12V for stepper motors 
+24V for arm motors 
+3.3V or 5V for esp32 
+Any Battery Management System (BMS)/Balancer
+2x Cytron MDD10A 2 channel motor driver
 
-Servo Motors:
-Servo Motor, 13 kg torque (full metal gear)
-Servo Motor, 35 kg torque (8 units DS3235 variant)
+Motors:
+1x Servo Motor, 13 kg torque (full metal gear) for head
+8x Servo Motor, blue 35kg torque DS3235 for arms
 Servo Connectors and Crimping Tool
-
-Additional Motors & Converters:
-B-Smart Motors (4 units 60 kg torque, form aliexpress) we recommend pay little bit more and redesing it for 60-70kg servos
+4x Bringsmart A58SW-555B geared motor with encoders
 
 Miscellaneous Hardware:
 Magnetic Inserts and Small Fasteners (M series inserts)
-Small Bearings or 4 mm Balls (for mechanical assemblies; quantity as needed)
-Elastic Paracord
-Magnets (approximately 70 units; specifications as needed)
-LG MJ1 Components (15 units; 3s5p)
+Elastic Paracord for hand
+fishing wire for hand
+50x Neodymium magnets 8mmx2mm
+Heat-Shrink Tape and ca glue or hotglue
 
 Audio & Visual Components:
-Wireless Microphone – Hollyland Lark M1 Solo
-Touchscreen LCD – 10.1″ IPS, 1024×600 resolution
-Camera Module – Raspberry Camera v3
-HDMI Adapter and Connector
-
-Adhesives & Fastening Tools:
-Heat-Shrink Tape and Adhesive
-Soldering/Crimping Tools (for connectors)
-
-Other Consumables:
-Bungee Cord (5 m) to make working fingers
-
-
----
-
-For more details, updates, or to get involved, check out our GitHub repository. Let’s build the future of open-source humanoid AI robotics together!
+any wireless usb – Hollyland Lark M1 Solo
+Waveshare Touchscreen LCD – 10.1″ IPS, 1024×600 resolution
+90 degree HDMI Adapter cable
