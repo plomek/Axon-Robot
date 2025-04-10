@@ -13,11 +13,11 @@ Axon is an open-source robot that uses AI. It can move its arms and head, and it
 
 ## Features
 
-- **Kinda Working Movements:** The robot can move its arms, "drive," and perform some head movements.
-- **Voice-Controlled:** Uses AI-powered speech recognition for intuitive, voice-based control.
-- **Modular & Customizable:** Made for easy upgrades and tweaks, so you can modify both the hardware and software.
+- **Movements:** The robot can move its arms, "drive," and turn his head.
+- **Voice-Controlled:** Uses AI-powered speech recognition for voice-based control.
+- **Modular & Customizable:** The magnetic "armor" is easly deatachable for easy replacement and modification.
 - **CAD Designs Included:** All the CAD files are available for anyone interested in building or modifying the robot.
-- **Simple Knowledge Base:** Works like a basic chatbot, enhanced with UART actions so you can execute some commands.
+- **Simple Knowledge Base:** Works like a basic chatbot, with UART actions so you can execute any command on esp32 to make it do stuff.
 
 ## CAD Models
 
@@ -29,7 +29,7 @@ The robot is supported by a structural aluminum profile, 20x20 mm with a 6 mm sl
 
 ## Installation & Setup
 
-Okay, so this is kinda hard because it's a prototype. You’ll need to install files on a Raspberry Pi and a PC (or some server capable of running Llama 3.1 or newer models). Once you download everything, copy the `client.py` and `app.py` (which serve as your control panel web app) to the Raspberry Pi, and on your "server" run `main.py`. If you're smart, you'll figure it out – but if you really want to do something with this (and you're not as clueless as we were), you should probably write your own scripts that work better. Just use ours as a blueprint.
+You’ll need to install files on a Raspberry Pi and a PC (or some server capable of running Llama 3.1 or newer models). Once you download everything, copy the `client.py` and `app.py` (which serve as your control panel web app) to the Raspberry Pi, and on your "server" run `main.py`. If you're smart, you'll figure it out – but if you really want to do something with this (and you're not as clueless as we were), you should probably write your own scripts that work better. Just use ours as a blueprint.
 
 ## Documentation
 
