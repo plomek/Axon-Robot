@@ -29,6 +29,10 @@ As of now, some parts still need to be CNC-cut from metal, along with two metal 
 
 The robot is supported by a structural aluminum profile, 20x20 mm with a 6 mm slot, which needs to be connected to the center of the bottom plate which can be done, for example, using a metal plate and corner brackets.
 
+<div align="center">
+  <img src="/.github/1.jpg" alt="Axon Robot" height="600vh"/><img src="/.github/2.jpg" alt="Axon CAD Design" height="600vh"/>
+</div>
+
 ## Installation & Setup
 
 You’ll need to install files on a Raspberry Pi and a PC (or some server capable of running Llama 3.1 or newer models). Once you download everything, copy the `client.py` and `app.py` (which serve as your control panel web app) to the Raspberry Pi, and on your "server" run `main.py`. If you're smart, you'll figure it out – but if you really want to do something with this (and you're not as clueless as we were), you should probably write your own scripts that work better. Just use ours as a blueprint.
@@ -45,13 +49,6 @@ Contributions, suggestions, and improvements are very welcome! To contribute:
 - Create a new branch for your changes.
 - Submit a pull request and describe your modifications in detail.
 
-<div align="center">
-  <img src="/.github/1.jpg" alt="Axon Robot" width="500"/>
-</div>
-
-<div align="center">
-  <img src="/.github/2.jpg" alt="Axon CAD Design" width="500"/>
-</div>
 
 Robot wiring:
 The robot is controlled by a Raspberry Pi through a web interface or voice commands. These commands are sent to four ESP32 modules. Each ESP32 receives its specific command and performs an action, such as changing the eye color. While it's possible to use 3 or even 2 ESP32 modules with the right code, we're using 4 because it was easier to split the code this way. Each ESP32 controls a different part of the robot:<br>
