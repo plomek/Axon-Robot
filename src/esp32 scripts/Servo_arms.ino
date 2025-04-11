@@ -137,7 +137,7 @@ void handleHandIdle(HandState &handState, ServoState &thumbState, ServoState &fi
         case IDLE_MOVING_TO_CLOSE:
             if (thumbState.currentPos == thumbState.targetPos &&
                 fingersState.currentPos == fingersState.targetPos) {
-                handState.timer = millis() + 5000; // Hold closed for 5 seconds
+                handState.timer = millis() + 5000;
                 handState.state = IDLE_HOLDING_CLOSED;
             }
             break;
@@ -153,7 +153,7 @@ void handleHandIdle(HandState &handState, ServoState &thumbState, ServoState &fi
         case IDLE_MOVING_TO_OPEN:
             if (thumbState.currentPos == startPos &&
                 fingersState.currentPos == startPos) {
-                handState.timer = millis() + random(4000, 7001); // 4-7 seconds until next movement
+                handState.timer = millis() + random(4000, 7001);
                 handState.state = IDLE_WAITING;
             }
             break;
