@@ -58,63 +58,69 @@ The robot is controlled by a Raspberry Pi through a web interface or voice comma
 3.Arm servos<br>
 4.Arm motors with limit switches. (experimental right now, the encoders don't work well with all four motors at once, so it relies on timers and limit switches, which don't always work perfectly).<br>
 
-## Parts List
-3D Printer:
-Recomended Neptune 4 Max preferably with a 0.8mm or 0.6mm nozzle for larger parts or any other 420mmx420mmx480mm or larger printer. You should be able to still print it on a smaller pritner by redesigning some parts or splitting prints in to multiple parts
+<div align="center">
+  <h1>Parts List</h1>
+</div>
 
-Stepper Motor & Drivers:
-2x Nema 17 Stepper Motor for driving
-2x Stepper Motor Drivers eg. TMC2209 V1.3
+## 3D Printer:  
+- Recomended Neptune 4 Max preferably with a 0.8mm or 0.6mm nozzle for larger parts.  
+- Any other 420mmx420mmx480mm or larger printer.  
+- You should be able to still print it on a smaller printer by redesigning some parts or splitting prints into multiple parts.  
 
-Microcontrollers & Boards:
-ESP32 Development Boards (4 units)
-RPI4 or newer
+## Stepper Motor & Drivers:  
+- 2x Nema 17 Stepper Motor for driving.  
+- 2x Stepper Motor Drivers (e.g., TMC2209 V1.3).  
 
-Filament & 3D Printing Materials:
-Esun PLA+ Filament, White (+-7 kg)
-Esun PLA+ Filament, Additional (2 kg, grey)
-optional TPU Filament for tires (250 g)
+## Microcontrollers & Boards:  
+- ESP32 Development Boards (4 units).  
+- RPI4 or newer.  
 
+## Filament & 3D Printing Materials:  
+- Esun PLA+ Filament, White (+-7 kg).  
+- Esun PLA+ Filament, Additional (2 kg, grey).  
+- Optional TPU Filament for tires (250 g).  
 
-Structural & Mechanical Components:
-Rotary Wheel (75 mm diameter) 53mm x 40mm mounting hole spacing
-Aluminum Profile 20mmx20mm lenght 1040mm and some way to mount it to the bottom like metal plate and corner brackets
+## Structural & Mechanical Components:  
+- Rotary Wheel (75 mm diameter) 53mm x 40mm mounting hole spacing.  
+- Aluminum Profile 20mmx20mm, length 1040mm.  
+- Some way to mount it to the bottom (e.g., metal plate and corner brackets).  
 
-Sensors & Accessories:
-raspberry pi camera v3 wide
-Ultrasonic Sensor
-Breadboards and cables various lengths (crimping your own longer cables eg.with 22awg wire and a cable crimper is recomended)
+## Sensors & Accessories:  
+- Raspberry Pi Camera v3 Wide.  
+- Ultrasonic Sensor.  
+- Breadboards and cables of various lengths.  
+- Crimping your own longer cables (e.g., with 22AWG wire and a cable crimper is recommended).  
 
-Power Components:
-XT60 Connectors for charging
-AWG12 Cable – Black (2 meters)
-AWG12 Cable – Red (2 meters)
-3s5p li-ion battery LG 18650 MJ1
-any 3s+ liion Battery charger - hota d6 pro
-Power distribiution board
-Led power switch
-li-ion battery indicator
-Multiple step up and step down converters:
-5V for raspberry pi and servos...
-12V for stepper motors 
-24V for arm motors 
-3.3V or 5V for esp32 
-Any Battery Management System (BMS)/Balancer
-2x Cytron MDD10A 2 channel motor driver
+## Power Components:  
+- XT60 Connectors for charging.  
+- AWG12 Cable – Black (2 meters).  
+- AWG12 Cable – Red (2 meters).  
+- 3s5p li-ion battery LG 18650 MJ1.  
+- Any 3s+ li-ion Battery charger (e.g., Hota D6 Pro).  
+- Power distribution board.  
+- LED power switch.  
+- Li-ion battery indicator.  
+- Multiple step-up and step-down converters:  
+  - 5V for Raspberry Pi and servos.  
+  - 12V for stepper motors.  
+  - 24V for arm motors.  
+  - 3.3V or 5V for ESP32.  
+- Any Battery Management System (BMS)/Balancer.  
+- 2x Cytron MDD10A 2-channel motor driver.  
 
-Motors:
-1x Servo Motor, 13 kg torque (full metal gear) for head
-8x Servo Motor, blue 35kg torque DS3235 for arms
-Servo Connectors and Crimping Tool
-4x Bringsmart A58SW-555B geared motor with encoders
+## Motors:  
+- 1x Servo Motor, 13 kg torque (full metal gear) for head.  
+- 8x Servo Motor, blue 35kg torque DS3235 for arms.  
+- Servo Connectors and Crimping Tool.  
+- 4x Bringsmart A58SW-555B geared motor with encoders.  
 
-Miscellaneous Hardware:
-Elastic Paracord for hand
-fishing wire for hand
-50x Neodymium magnets 8mmx2mm
-Heat-Shrink Tape and ca glue or hotglue
+## Miscellaneous Hardware:  
+- Elastic Paracord for hand.  
+- Fishing wire for hand.  
+- 50x Neodymium magnets 8mmx2mm.  
+- Heat-Shrink Tape and CA glue or hot glue.  
 
-Audio & Visual Components:
-any wireless usb mic – Hollyland Lark M1 Solo
-Waveshare Touchscreen LCD – 10.1″ IPS, 1024×600 resolution
-90 degree HDMI Adapter cable
+## Audio & Visual Components:  
+- Any wireless USB mic (e.g., Hollyland Lark M1 Solo).  
+- Waveshare Touchscreen LCD – 10.1″ IPS, 1024×600 resolution.  
+- 90-degree HDMI Adapter cable.  
