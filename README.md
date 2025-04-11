@@ -25,7 +25,7 @@ All of the CAD files are available on [Onshape](https://cad.onshape.com/document
 
 As of now, some parts still need to be CNC-cut from metal, along with two metal sheets that need to be CNC'd and bent into shape. However, It should be redesiged to be 3D printable and possibly to use servos instead of unreliable geared motors with encoders whitch are hard to controll, making the robot easier to replicate.
 
-The robot is supported by a structural aluminum profile, 20x20 mm with a 6 mm slot, which needs to be connected to the center of the bottom drive—this can be done, for example, using a metal plate.
+The robot is supported by a structural aluminum profile, 20x20 mm with a 6 mm slot, which needs to be connected to the center of the bottom plate whith can be done, for example, using a metal plate and corner brackets.
 
 ## Installation & Setup
 
@@ -52,11 +52,11 @@ Contributions, suggestions, and improvements are very welcome! To contribute:
 </div>
 
 Robot wiering:
-The robot is controlled by a Raspberry Pi through a web interface or voice commands. These commands are sent to four ESP32 modules. Each ESP32 receives its specific command and performs an action, such as changing the eye color. While it's possible to use 3 or even 2 ESP32 modules with the right code, we're using 4 because it was easier to split the code this way. Each ESP32 controls a different part of the robot:
-1.Head servo and LED
-2.Robot driving
-3.Arm servos
-4.Arm motors with limit switches. (experimental—right now, the encoders don't work well with all four motors at once, so it relies on timers and limit switches, which don't always work perfectly).
+The robot is controlled by a Raspberry Pi through a web interface or voice commands. These commands are sent to four ESP32 modules. Each ESP32 receives its specific command and performs an action, such as changing the eye color. While it's possible to use 3 or even 2 ESP32 modules with the right code, we're using 4 because it was easier to split the code this way. Each ESP32 controls a different part of the robot:<br>
+1.Head servo and LED<br>
+2.Robot driving<br>
+3.Arm servos<br>
+4.Arm motors with limit switches. (experimental right now, the encoders don't work well with all four motors at once, so it relies on timers and limit switches, which don't always work perfectly).<br>
 
 ## Parts List
 3D Printer:
@@ -109,13 +109,12 @@ Servo Connectors and Crimping Tool
 4x Bringsmart A58SW-555B geared motor with encoders
 
 Miscellaneous Hardware:
-Magnetic Inserts and Small Fasteners (M series inserts)
 Elastic Paracord for hand
 fishing wire for hand
 50x Neodymium magnets 8mmx2mm
 Heat-Shrink Tape and ca glue or hotglue
 
 Audio & Visual Components:
-any wireless usb – Hollyland Lark M1 Solo
+any wireless usb mic – Hollyland Lark M1 Solo
 Waveshare Touchscreen LCD – 10.1″ IPS, 1024×600 resolution
 90 degree HDMI Adapter cable
