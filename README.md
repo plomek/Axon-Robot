@@ -3,9 +3,9 @@
   <img src="/.github/axongif1.gif" alt="Axon Robot in action" width="500"/>
 </div>
 
-<b>Axon is currently a working prototype. While it’s fully functional, it's not yet fully polished and still needs some improvements and refinements to make it easier to assemble, more reliable, and more user-friendly. Just keep in mind that when we started this project, we had no cad experience and were 16 and 17 years old we are working on it sice May 2024.</b>
+<b>Axon is currently a working prototype. While it’s fully functional, it's not yet fully polished and still needs some improvements and refinements to make it easier to assemble, more reliable, and more user-friendly. Just keep in mind that when we started this project, we had no cad experience and were 16 and 17 years old.</b>
 
-Axon is an open-source robot that uses AI. It can move its arms and head, and it can also drive around. It has AI-powered speech recognition, so you can control it with your voice. It uses a database of questions with actions, along with a large language model (LLM), to answer other questions. It also has a built-in screen, colorful LED eyes, and can be controlled through a website interface.
+Axon is an open-source robot that uses AI. It can move its arms and head, and it can also drive around. It has AI-powered speech recognition, so you can control it with your voice. It uses a database of questions with actions, along with a large language model (LLM), to answer other questions. It also has a built-in screen, colorful LED eyes, and can be controlled through a website interface. We are working on it sice May 2024
 <div align="center">
   <img src="/.github/3.jpg"/>
 </div>
