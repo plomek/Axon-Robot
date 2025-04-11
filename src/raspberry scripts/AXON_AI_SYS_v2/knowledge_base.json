@@ -1,0 +1,9 @@
+{
+  "questions": [
+    {
+      "question": "Test",
+      "answer": "This answers Test question",
+      "action": "Your custom UART commmand"
+    }
+  ]
+}
