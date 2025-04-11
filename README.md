@@ -5,7 +5,7 @@
 
 <b>Axon is currently a working prototype. While it’s fully functional, it's not yet fully polished and still needs some improvements and refinements to make it easier to assemble, more reliable, and more user-friendly. Just keep in mind that when we started this project, we had no cad experience and were 16 and 17 years old.</b>
 
-Axon is an open-source robot that uses AI. It can move its arms and head, and it can also drive around. It has AI-powered speech recognition, so you can control it with your voice. It uses a database of questions with actions, along with a large language model (LLM), to answer other questions. It also has a built-in screen, colorful LED eyes, and can be controlled through a website interface. We are working on it sice May 2024
+Axon is an open-source robot that uses AI. It can move its arms and head, and it can also drive around. It has AI-powered speech recognition, so you can control it with your voice. It uses a database of questions with actions, along with a large language model (LLM), to answer other questions. It also has a built-in screen, colorful LED eyes, and can be controlled through a website interface. We are working on it since May 2024
 <div align="center">
   <img src="/.github/3.jpg"/>
 </div>
@@ -15,17 +15,17 @@ Axon is an open-source robot that uses AI. It can move its arms and head, and it
 
 - **Movements:** The robot can move its arms, "drive," and turn his head.
 - **Voice-Controlled:** Uses AI-powered speech recognition for voice-based control.
-- **Modular & Customizable:** The magnetic "armor" is easly deatachable for easy replacement and modification.
-- **CAD Designs Included:** All the CAD files are available for anyone interested in building or modifying the robot.
+- **Modular & Customizable:** The magnetic "armor" is easily detachable for easy replacement and modification.
+- **CAD Designs Included:** All the CAD files are avilable for anyone interested in building or modifying the robot.
 - **Simple Knowledge Base:** Works like a basic chatbot, with UART actions so you can execute any command on esp32 to make it do stuff.
 
 ## CAD Models
 
-All of the CAD files are available on [Onshape](https://cad.onshape.com/documents/940cdfcdb0dfad6e1a4b6d02/w/9cf2ed19ea888e5cc5dfd799/e/9b8e8ab3c406b01155d91643) and stl files avillable on [Printables](https://www.printables.com/model/1260260-axon-open-source-humanoid-robot). This project is <b>not beginer friendly!</b> You should have some knowlage about 3D printing and CAD preferably onshape. Some parts will need to be split into smaller pieces unless you have a very large 3D printer. The robot was designed to be printed on a 420x420 mm build plate. It was printed it on the Neptune 4 Max, but it should be possible to print it on a smaller 3D printer with some adjustments. It might even be better to print the base in multiple parts to make it easier to open after assembly.
+All of the CAD files are available on [Onshape](https://cad.onshape.com/documents/940cdfcdb0dfad6e1a4b6d02/w/9cf2ed19ea888e5cc5dfd799/e/9b8e8ab3c406b01155d91643) and stl files available on [Printables](https://www.printables.com/model/1260260-axon-open-source-humanoid-robot). This project is <b>not beginner friendly!</b> You should have some knowledge about 3D printing and CAD preferably onshape. Some parts will need to be split into smaller pieces unless you have a very large 3D printer. The robot was designed to be printed on a 420x420 mm build plate. It was printed it on the Neptune 4 Max, but it should be possible to print it on a smaller 3D printer with some adjustments. It might even be better to print the base in multiple parts to make it easier to open after assembly.
 
-As of now, some parts still need to be CNC-cut from metal, along with two metal sheets that need to be CNC'd and bent into shape. However, It should be redesiged to be 3D printable and possibly to use servos instead of unreliable geared motors with encoders whitch are hard to controll, making the robot easier to replicate.
+As of now, some parts still need to be CNC-cut from metal, along with two metal sheets that need to be CNC'd and bent into shape. however, It should be redesigned to be 3D printable and possibly to use servos instead of unreliable geared motors with encoders which are hard to control, making the robot easier to replicate.
 
-The robot is supported by a structural aluminum profile, 20x20 mm with a 6 mm slot, which needs to be connected to the center of the bottom plate whith can be done, for example, using a metal plate and corner brackets.
+The robot is supported by a structural aluminum profile, 20x20 mm with a 6 mm slot, which needs to be connected to the center of the bottom plate which can be done, for example, using a metal plate and corner brackets.
 
 ## Installation & Setup
 
@@ -33,7 +33,7 @@ You’ll need to install files on a Raspberry Pi and a PC (or some server capabl
 
 ## Documentation
 
-Comming Soon™
+Coming Soon™
 
 ## Contributing
 
@@ -51,7 +51,7 @@ Contributions, suggestions, and improvements are very welcome! To contribute:
   <img src="/.github/2.jpg" alt="Axon CAD Design" width="500"/>
 </div>
 
-Robot wiering:
+Robot wiring:
 The robot is controlled by a Raspberry Pi through a web interface or voice commands. These commands are sent to four ESP32 modules. Each ESP32 receives its specific command and performs an action, such as changing the eye color. While it's possible to use 3 or even 2 ESP32 modules with the right code, we're using 4 because it was easier to split the code this way. Each ESP32 controls a different part of the robot:<br>
 1.Head servo and LED<br>
 2.Robot driving<br>
@@ -63,7 +63,7 @@ The robot is controlled by a Raspberry Pi through a web interface or voice comma
 </div>
 
 ## 3D Printer:  
-- Recomended Neptune 4 Max preferably with a 0.8mm or 0.6mm nozzle for larger parts.  
+- Recommended Neptune 4 Max preferably with a 0.8mm or 0.6mm nozzle for larger parts.  
 - Any other 420mmx420mmx480mm or larger printer.  
 - You should be able to still print it on a smaller printer by redesigning some parts or splitting prints into multiple parts.  
 
@@ -105,7 +105,7 @@ The robot is controlled by a Raspberry Pi through a web interface or voice comma
   - 12V for stepper motors.  
   - 24V for arm motors.  
   - 3.3V or 5V for ESP32.  
-- Any Battery Management System (BMS)/Balancer.  
+- Any Battery Management System (BMS)/balancer.  
 - 2x Cytron MDD10A 2-channel motor driver.  
 
 ## Motors:  
@@ -117,7 +117,7 @@ The robot is controlled by a Raspberry Pi through a web interface or voice comma
 ## Miscellaneous Hardware:  
 - Elastic Paracord for hand.  
 - Fishing wire for hand.  
-- 50x Neodymium magnets 8mmx2mm.  
+- 50x neodymium magnets 8mmx2mm.  
 - Heat-Shrink Tape and CA glue or hot glue.  
 
 ## Audio & Visual Components:  
