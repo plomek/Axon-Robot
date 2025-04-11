@@ -30,7 +30,7 @@ As of now, some parts still need to be CNC-cut from metal, along with two metal 
 The robot is supported by a structural aluminum profile, 20x20 mm with a 6 mm slot, which needs to be connected to the center of the bottom plate which can be done, for example, using a metal plate and corner brackets.
 
 <div align="center">
-  <img src="/.github/1.jpg" alt="Axon Robot" height="600vh"/><img src="/.github/2.jpg" alt="Axon CAD Design" height="600vh"/>
+  <img src="/.github/1.jpg" alt="Axon Robot" height="500vh"/><img src="/.github/2.jpg" alt="Axon CAD Design" height="500vh"/>
 </div>
 
 ## Installation & Setup
