@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Axon Humanoid AI Robot</h1>
-  <img src="/.github/1.jpg" alt="Axon Robot" width="500"/>
+  <img src="/.github/axongif1.gif" alt="Axon Robot in action" width="500"/>
 </div>
 
 <b>Axon is currently a working prototype. While it’s fully functional, it's not yet fully polished and still needs some improvements and refinements to make it easier to assemble, more reliable, and more user-friendly. Just keep in mind that when we started this project, we had no cad experience and were 16 and 17 years old we are working on it sice May 2024.</b>
@@ -44,7 +44,7 @@ Contributions, suggestions, and improvements are very welcome! To contribute:
 - Submit a pull request and describe your modifications in detail.
 
 <div align="center">
-  <img src="/.github/axongif1.gif" alt="Axon Robot in action" width="500"/>
+  <img src="/.github/1.jpg" alt="Axon Robot" width="500"/>
 </div>
 
 <div align="center">
