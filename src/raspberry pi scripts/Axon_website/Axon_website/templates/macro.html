@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axon Panel Sterowania - Makra</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container-fluid d-flex flex-column vh-100">
+        <div class="row flex-grow-1">
+            <!-- Sidebar -->
+            <div class="col-md-2 bg-dark text-white sidebar">
+                <div class="logo py-3 text-center">
+                    <h2><i class="fas fa-robot"></i> Axon</h2>
+                </div>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="{{ url_for('index') }}"><i class="fas fa-cogs"></i> Control</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" href="{{ url_for('macro') }}"><i class="fas fa-terminal"></i> Panel z Makrami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="{{ url_for('color_control') }}"><i class="fas fa-palette"></i> Color Control</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><i class="fas fa-video"></i> Camera View</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><i class="fas fa-hand-point-up"></i> Buttons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><i class="fas fa-database"></i> Data</a>
+                    </li>
+                    <li>
+                        <div class="nav-item">
+                            <button class="btn btn-danger btn-block control-btn emergency-stop" data-command="STOP">
+                                <i class="fas fa-exclamation-triangle"></i> EMERGENCY STOP
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Main Content -->
+            <div class="col-md-10 bg-dark text-white main-content">
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">Arms</div>
+                            <div class="card-body">
+                                <button class="btn btn-secondary btn-block control-btn" data-command="home_left_all">home_left_all</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="home_left_pitch">home_left_pitch</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="home_left_roll">home_left_roll</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="home_right_all">home_right_all</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="home_right_pitch">home_right_pitch</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="home_right_roll">home_right_roll</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="home_all">home_all</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">Test macros</div>
+                            <div class="card-body">
+                                <button class="btn btn-secondary btn-block control-btn" data-command="macro1">macro1</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="macro2">macro2</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="macro3">macro3</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="macro4">macro4</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="macro5">macro5</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="macro6">macro6</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="macro7">macro7</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="macro8">macro8</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="macro9">macro9</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="macro10">macro10</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="macro11">macro11</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="macro12">macro12</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">Command Line</div>
+                            <div class="card-body">
+                                <textarea id="command-line" class="form-control" rows="5" style="background-color: #444444; color: white;" readonly></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">Head movement</div>
+                            <div class="card-body">
+                                <button class="btn btn-secondary btn-block control-btn" data-command="head_right">head_right</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="head_center">head_center</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="head_left">head_left</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">Hands</div>
+                            <div class="card-body">
+                                <button class="btn btn-secondary btn-block control-btn" data-command="right_thumb_0">Right Thumb 0%</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="right_thumb_50">Right Thumb 50%</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="right_thumb_100">Right Thumb 100%</button>
+                                
+                                <button class="btn btn-secondary btn-block control-btn" data-command="right_fingers_0">Right Fingers 0%</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="right_fingers_50">Right Fingers 50%</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="right_fingers_100">Right Fingers 100%</button>
+                                
+                                <button class="btn btn-secondary btn-block control-btn" data-command="left_thumb_0">Left Thumb 0%</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="left_thumb_50">Left Thumb 50%</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="left_thumb_100">Left Thumb 100%</button>
+                                
+                                <button class="btn btn-secondary btn-block control-btn" data-command="left_fingers_0">Left Fingers 0%</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="left_fingers_50">Left Fingers 50%</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="left_fingers_100">Left Fingers 100%</button>
+                                
+                                <button class="btn btn-secondary btn-block control-btn" data-command="hands_idle_on">Hands Idle ON</button>
+                                <button class="btn btn-secondary btn-block control-btn" data-command="hands_idle_off">Hands Idle OFF</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="text-center py-3 bg-dark text-white">
+            <p>Developed by Marcin Tyszko & Marcin Plominski</p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
