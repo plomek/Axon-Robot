@@ -77,6 +77,7 @@ Contributions, suggestions, and improvements are very welcome! To contribute:
 - Fork the repository.
 - Create a new branch for your changes.
 - Submit a pull request and describe your modifications in detail.
+- For the 3D model, you can either make a remix on Printables or send me the model and I will update it there.
 
 
 Robot wiring:
