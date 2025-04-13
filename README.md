@@ -153,4 +153,6 @@ The robot is controlled by a Raspberry Pi through a web interface or voice comma
 ## Audio & Visual Components:  
 - Any wireless USB mic (e.g., Hollyland Lark M1 Solo).  
 - Waveshare Touchscreen LCD – 10.1″ IPS, 1024×600 resolution.  
-- 90-degree HDMI Adapter cable.  
+- 90-degree HDMI Adapter cable. 
+
+If you have any questions or suggestions, feel free to contact us on Discord: plomek, minc0
