@@ -2,7 +2,7 @@
   <h1>Axon Humanoid AI Robot</h1>
 </div>
 
-<b>Axon is currently a working prototype. While it’s fully functional, it's not yet fully polished and still needs some improvements and refinements to make it easier to assemble, more reliable, and more user-friendly. Just keep in mind that when we started this project, we had no cad experience and were 16 and 17 years old.</b>
+<b>Axon is currently a working prototype. While it’s fully functional, it's not yet fully polished and still needs some improvements and refinements to make it easier to assemble, more reliable, and more user-friendly. Just keep in mind that when we started this project, we had no CAD experience and were 16 and 17 years old.</b>
 <div align="center">
     <img src="/.github/axongif1.gif" alt="Axon Robot in action" width="500"/>
 </div>
@@ -104,7 +104,7 @@ The robot is controlled by a Raspberry Pi through a web interface or voice comma
   - 12V for stepper motors.  
   - 24V for arm motors.  
   - 3.3V or 5V for ESP32.  
-- Any Battery Management System (BMS)/balancer.  
+- Any 3S BMS.  
 - 2x Cytron MDD10A 2-channel motor driver.  
 
 ## Motors:  
@@ -117,7 +117,8 @@ The robot is controlled by a Raspberry Pi through a web interface or voice comma
 - Elastic Paracord for hand.  
 - Fishing wire for hand.  
 - 50x neodymium magnets 8mmx2mm.  
-- Heat-Shrink Tape and CA glue or hot glue.  
+- CA glue or hot glue for magnets.
+- Various lenght M3 M4 M5 M6 Screws and bolts
 
 ## Audio & Visual Components:  
 - Any wireless USB mic (e.g., Hollyland Lark M1 Solo).  
