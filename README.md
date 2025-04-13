@@ -27,6 +27,8 @@ All of the CAD files are available on [Onshape](https://cad.onshape.com/document
 
 As of now, some parts still need to be CNC-cut from metal, along with two metal sheets that need to be CNC'd and bent into shape. however, It should be redesigned to be 3D printable and possibly to use servos instead of unreliable geared motors with encoders which are hard to control, making the robot easier to replicate.
 
+Axon is using a modified version of this [Robotic Prosthetic Hand](https://www.thingiverse.com/thing:1691704) by [grossrc](https://www.thingiverse.com/grossrc) for its palm and fingers [asembly video](https://www.youtube.com/watch?v=RJNDjnWV8Eo) use it for palm and fingers only
+
 The robot is supported by a structural aluminum profile, 20x20 mm with a 6 mm slot, which needs to be connected to the center of the bottom plate which can be done, for example, using a metal plate and corner brackets.
 
 <div align="center">
