@@ -115,10 +115,12 @@ The robot is controlled by a Raspberry Pi through a web interface or voice comma
 - Some way to mount it to the bottom (e.g., metal plate and corner brackets).  
 
 ## Sensors & Accessories:  
-- Raspberry Pi Camera v3 Wide.  
+- Raspberry Pi Camera v3 Wide. 
+- 50cm camera raspberry pi camera cable
 - Ultrasonic Sensor.  
 - Breadboards and cables of various lengths.  
-- Crimping your own longer cables (e.g., with 22AWG wire and a cable crimper is recommended).  
+- Crimping your own longer cables (e.g., with 22AWG wire and a cable crimper is recommended).
+- LED RGB 7 x WS2812 5050
 
 ## Power Components:  
 - XT60 Connectors for charging.  
@@ -141,7 +143,8 @@ The robot is controlled by a Raspberry Pi through a web interface or voice comma
 - 1x Servo Motor, 13 kg torque (full metal gear) for head.  
 - 8x Servo Motor, blue 35kg torque DS3235 for arms.  
 - Servo Connectors and Crimping Tool.  
-- 4x Bringsmart A58SW-555B geared motor with encoders.  
+- 4x Bringsmart A58SW-555B geared motor with encoders.
+- 4x limit switches
 
 ## Miscellaneous Hardware:  
 - Elastic Paracord for hand.  
