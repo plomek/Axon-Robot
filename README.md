@@ -37,6 +37,33 @@ The robot is supported by a structural aluminum profile, 20x20 mm with a 6 mm sl
 
 You’ll need to install files on a Raspberry Pi and a PC (or some server capable of running Llama 3.1 or newer models). Once you download everything, copy the `client.py` and `app.py` (which serve as your control panel web app) to the Raspberry Pi, and on your "server" run `main.py`. If you're smart, you'll figure it out – but if you really want to do something with this (and you're not as clueless as we were), you should probably write your own scripts that work better. Just use ours as a blueprint.
 
+## Axon Robot Open Source Project – Usage Instructions
+
+# Axon_AI Folder
+axon file (no extension):
+This is the Ollama configuration file. Use it to configure the language model.
+
+client.py:
+This script allows the Raspberry Pi (RPI) to connect to your computer via HTTP. It can work on a local network. If you don’t want to carry your computer/server with you, you can set up port forwarding on your local network to access it remotely.
+
+main.py:
+This is the AI engine script. It lets the RPI connect to the server, execute AI commands, and process voice interactions.
+
+knowledge_base.json:
+Here you can easily create your own questions and answers. You can also add UART commands that the RPI can send (for example, to an ESP32). This enables voice control of the project and allows you to extend the AI’s knowledge beyond what Ollama provides.
+
+# Axon_Control_Panel Folder
+Web Control Panel:
+This folder contains a simple Flask-based web page that runs on the RPI. It lets you control the robot and create your own macros easily.
+
+In the HTML, buttons include a data-command attribute that sends a specific UART command exactly as entered when clicked.
+
+The functionality is powered by a JavaScript file.
+
+Note: A few buttons on the navbar are non-functional (they’re there to make the interface look more complete); they do not affect any core features.
+
+
+
 ## Documentation
 
 Coming Soon™
