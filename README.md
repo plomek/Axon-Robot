@@ -39,7 +39,7 @@ You’ll need to install files on a Raspberry Pi and a PC (or some server capabl
 
 ## Axon Robot Open Source Project – Usage Instructions
 
-# Axon_AI Folder
+### Axon_AI Folder
 axon file (no extension):
 This is the Ollama configuration file. Use it to configure the language model.
 
@@ -52,7 +52,7 @@ This is the AI engine script. It lets the RPI connect to the server, execute AI 
 knowledge_base.json:
 Here you can easily create your own questions and answers. You can also add UART commands that the RPI can send (for example, to an ESP32). This enables voice control of the project and allows you to extend the AI’s knowledge beyond what Ollama provides.
 
-# Axon_Control_Panel Folder
+### Axon_Control_Panel Folder
 Web Control Panel:
 This folder contains a simple Flask-based web page that runs on the RPI. It lets you control the robot and create your own macros easily.
 
